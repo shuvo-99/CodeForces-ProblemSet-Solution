@@ -3,20 +3,11 @@ const evenDivide = (inp) => {
     return "NO";
   }
   for (let i = 2; i <= inp / 2; i += 2) {
-    if (i + i === inp) {
+    if ((inp - i) % 2 === 0) {
       return "YES";
     }
   }
-
-  for (let i = 2; i <= inp / 2; i += 2) {
-    for (let j = i + 2; j <= inp / 2; j += 2) {
-      if (i + j === inp) {
-        return "YES";
-      }
-    }
-  }
-
   return "NO";
 };
 
-console.log(evenDivide(7));
+console.log(evenDivide(4));
