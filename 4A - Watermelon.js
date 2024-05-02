@@ -20,4 +20,4 @@ const evenDivide = (inp) => {
   return "NO";
 };
 
-console.log(evenDivide(4));
+print(evenDivide(4));
