@@ -9,5 +9,4 @@ function nextRound(place) {
   }
   print(count);
 }
-
 nextRound(parseInt(inpArr[1]));
